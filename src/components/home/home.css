@@ -65,4 +65,15 @@ transition: 1s ease;
     margin: 0 auto;
   }
 }
+.intro__container{
+  height: 100vh;
+  margin-top: 2rem;
+}
 
+.small__introheading{
+  font-family:'Sriracha', cursive;
+}
+
+.small__intro{
+  font-family: 'Sriracha', cursive;
+}
