@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,500&family=Libre+Baskerville:ital@0;1&family=Permanent+Marker&family=Sriracha&display=swap');
+
+.home__container{
+  height: 100vh;
+  display: grid;
+  gap: 2em;
+  margin-top: 3rem;
+}
+
+@media (min-width:50em){
+  .home__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.intro__text{
+  margin-left: 5rem;
+}
+
+.intro__text h1{
+  font-family: 'Chivo', sans-serif;
+  font-size: 4rem;
+}
+
+.intro__text strong{
+  color: rgb(13, 109, 235);
+}
+
+.intro__text p{
+  font-family: 'Sriracha', cursive;
+  font-size: 1.5rem;
+  color: rgb(55, 47, 63);
+
+}
+
+.author__image{
+  margin-right: 5rem ;
+}
+
+.author__img{
+  
+  border-radius: 50%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.author__img{
+  transition: 1s ease;
+  }
+  
+.author__img:hover {
+-webkit-filter: blur(5px);
+transition: 1s ease;
+}
+
+@media (max-width:70em){
+  .intro__text h1{
+    font-size: 2rem;
+  }
+  .intro__text p{
+    font-size: 1rem;
+  }
+  .author__image{
+    margin: 0 auto;
+  }
+}
+
