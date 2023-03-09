@@ -3,7 +3,7 @@ import './header.css';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {MdDesignServices} from 'react-icons/md'
 
-export default function Header() {
+const  Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className='app__navbar'>
@@ -36,3 +36,6 @@ export default function Header() {
     </nav>
   )
 }
+
+export default Header
+

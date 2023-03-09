@@ -1,15 +1,14 @@
 import './App.css';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
-import Navbar from './components/navbar/Navbar';
+import {Header, Navbar, Home, Footer} from './components/index'
 
-function App() {
+const App = () => {
 
   return (
     <div className="App">
       {/* <Navbar/> */}
       <Header/>
       <Home/>
+      <Footer/>
     </div>
   );
 }

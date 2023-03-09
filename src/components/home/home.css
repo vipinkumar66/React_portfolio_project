@@ -65,10 +65,6 @@ transition: 1s ease;
     margin: 0 auto;
   }
 }
-.intro__container{
-  height: 100vh;
-  margin-top: 2rem;
-}
 
 .small__introheading{
   font-family:'Sriracha', cursive;
@@ -76,4 +72,52 @@ transition: 1s ease;
 
 .small__intro{
   font-family: 'Sriracha', cursive;
+}
+
+.skills-container{
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.blockquote p{
+  font-family:'Sriracha', cursive;
+  font-weight: bold;
+}
+.skills-card{
+  margin-top: 2rem;
+}
+
+.connect__container{
+  height: 100vh;
+  font-family: 'Sriracha', cursive;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+.connect__container h3{
+  color: rgb(87, 87, 190);
+}
+
+.connect__container button{
+  margin-bottom: 1rem;
+  background: rgb(230, 53, 53);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.projects__intro{
+  margin-top: 2rem !important;
+  align-items: center;
+  justify-content: center;
+  
+}
+.projects__card{
+  margin-top: 3rem;
+}
+
+.card img{
+  max-height: 40vh;
+  object-fit: contain;
 }
