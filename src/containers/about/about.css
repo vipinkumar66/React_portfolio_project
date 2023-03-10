@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,500&family=Libre+Baskerville:ital@0;1&family=Permanent+Marker&family=Sriracha&display=swap');
+
+.about__container-intro h1{
+  font-family: 'Chivo', sans-serif;
+  font-style: italic;
+}
+
+.about__container-intro h3{
+  font-family:'Sriracha', cursive;
+}
+
+.accordion-button{
+  font-family:'Sriracha', cursive;
+}
+
+.about__container-graduation{
+  font-family: 'Chivo', sans-serif;
+  font-weight: bolder;
+  color: rgb(92, 64, 117);
+}
+
+.about__container-socialmedia__title h2{
+  font-family:'Chivo', sans-serif;
+  color: #fff;
+  font-weight: 900;
+  line-height: 27px;
+}
+
+.about__container-socialmedia h4{
+  font-family:'Sriracha', cursive;
+  line-height: 50px;
+  color: rgb(19, 19, 94);
+}
+
+.about__container-socialmedia a{
+  text-decoration: none;
+  color: rgb(19, 19, 94);
+}

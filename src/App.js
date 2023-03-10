@@ -1,5 +1,6 @@
 import './App.css';
 import {Header, Navbar, Home, Footer} from './components/index'
+import { About } from './containers';
 
 const App = () => {
 
@@ -7,8 +8,9 @@ const App = () => {
     <div className="App">
       {/* <Navbar/> */}
       <Header/>
-      <Home/>
-      <Footer/>
+      {/* <Home/> */}
+      <About/>
+      {/* <Footer/> */}
     </div>
   );
 }
