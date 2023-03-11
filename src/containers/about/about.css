@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@1,500&family=Libre+Baskerville:ital@0;1&family=Permanent+Marker&family=Sriracha&display=swap');
 
+.about{
+  display: flex;
+  flex-direction: column;
+}
+
 .about__container-intro h1{
   font-family: 'Chivo', sans-serif;
   font-style: italic;
@@ -9,30 +14,205 @@
   font-family:'Sriracha', cursive;
 }
 
-.accordion-button{
-  font-family:'Sriracha', cursive;
-}
-
 .about__container-graduation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__container-graduation h1{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-family: 'Chivo', sans-serif;
-  font-weight: bolder;
-  color: rgb(92, 64, 117);
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 25px;
+  color: brown;
+
+  margin-right: 2rem;
 }
 
-.about__container-socialmedia__title h2{
-  font-family:'Chivo', sans-serif;
-  color: #fff;
-  font-weight: 900;
-  line-height: 27px;
+.about__container-graduation__small{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-.about__container-socialmedia h4{
+.about__container-graduation__small h3{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+.about__container-graduation__small p{
   font-family:'Sriracha', cursive;
-  line-height: 50px;
-  color: rgb(19, 19, 94);
+  font-size: 20px;
+  margin-bottom: 2rem;
 }
 
-.about__container-socialmedia a{
+.about__container-social{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.about__container-social__image{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-right: 2rem;
+}
+
+.about__container-social__image img{
+  height: 100%;
+  width: 100%;
+}
+
+.about__container-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.about__container-content h4{
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(236, 134, 8);
+}
+
+.about__container-content h1{
+  font-family: 'Chivo', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 650;
+  line-height: 25px;
+  color: rgb(57, 93, 253);
+
+  margin-top: 1rem;
+}
+
+.about__container-content p{
+  font-family:'Sriracha', cursive;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.about__container-content a{
   text-decoration: none;
-  color: rgb(19, 19, 94);
+  color: black;
+}
+
+.about__resume{
+  display: flex;
+  justify-content: space-between; /* Make space between the items, if there are two items then put both of them in the different ends of the div */
+  align-items: center;
+  flex-direction: row;
+
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: rgb(203,173,186);
+  background: radial-gradient(circle, rgba(203,173,186,1) 0%, rgba(233,237,241,1) 100%);
+}
+
+.about__resume-content p {
+  font-family:'Sriracha', cursive;
+  font-size: 32px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.about__resume-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.about__resume-btn button {
+  background: rgb(0, 0, 0);
+  font-family:'Sriracha', cursive;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.about__resume-btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
+@media screen and (max-width:950px) {
+  .about__container-social{
+    flex-direction: column;
+  }
+  .about__container-social__image{
+    margin: 1rem 0;
+  }
+  .about__container-social-content{
+    margin-top: 2rem;
+  }
+  .about__container{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about__container-social__image img {
+      width: 100%;
+      height: 100%;
+  }
+  .about__container-graduation{
+    flex-direction: column;
+  }
+  .about__container-graduation h1{
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about__resume {
+      flex-direction: column;
+  }
+
+  .about__resume-btn {
+      margin: 2rem 0 0;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .about__resume {
+      flex-direction: column;
+      margin: 4rem 2rem;
+  }
+
+  .about__resume-content h3 {
+      font-size: 18px;
+      line-height: 32px;
+  }
+
+  .about__resume-btn button {
+      font-size: 14px;
+      line-height: 28px;
+  }
 }
