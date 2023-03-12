@@ -1,0 +1,227 @@
+.projects{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__container{
+  display: flex;
+  flex-direction: column;
+}
+.projects__container-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.projects__container-image img{
+  width: 60%;
+  height: 80%;
+}
+
+.project__container-intro_btn{
+
+  display: flex;
+  justify-content: space-between; /* Make space between the items, if there are two items then put both of them in the different ends of the div */
+  align-items: center;
+  flex-direction: row;
+
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgb(255,237,246);
+  background: linear-gradient(284deg, rgba(255,237,246,1) 16%, rgba(156,205,255,1) 47%);
+}
+
+.projects__container-intro{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.projects__container-intro h1{
+  font-family: 'Chivo', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.projects__container-intro strong{
+  color: rgb(161, 0, 0);
+}
+
+.projects__container-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.projects__container-btn button{
+  background: #dbd9d9;
+  font-family:'Sriracha', cursive;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.all__projects-scrapping{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  margin-top: 4rem;
+}
+
+.all_projects-scrapping_heading{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 25px;
+  color: brown;
+
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.all_project-scrapping_content{
+  /* flex: 2; */
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 5rem;
+}
+
+.all_project-scrapping_content h2{
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+
+  font-family: 'Chivo', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(105, 105, 245);
+}
+
+.all_project-scrapping_content p{
+  flex: 2;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: center;
+
+  font-family: 'Sriracha', cursive;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.all__projects-web{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.all__projects-web_heading{
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 25px;
+  color: brown;
+
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.all__projects-web_content{
+  /* flex: 2; */
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 5rem;
+}
+
+.all__projects-web_content h2{
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+
+  font-family: 'Chivo', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: rgb(105, 105, 245);
+}
+
+.all__projects-web_content p{
+  flex: 2;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: center;
+
+  font-family: 'Sriracha', cursive;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+@media screen and (max-width:950px) {
+  .projects{
+    flex-direction: column;
+  }
+  .all__projects-scrapping{
+    flex-direction: column;
+    margin: 1rem 0 ;
+  }
+  .all__projects-web{
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .all_project-scrapping_content{
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+  .all__projects-web_content{
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project__container-intro_btn {
+      flex-direction: column;
+  }
+
+  .projects__container-btn {
+      margin: 2rem 0 0;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .project__container-intro_btn {
+      flex-direction: column;
+      margin: 4rem 2rem;
+  }
+
+  .projects__container-intro h1 {
+      font-size: 18px;
+      line-height: 32px;
+  }
+
+  .projects__container-btn button {
+      font-size: 14px;
+      line-height: 28px;
+  }
+}

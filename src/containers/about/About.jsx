@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <div className='about'>
-      <div className='container about__container'>
+      <div className='container about__container' data-aos="fade-top">
         <div className='row about__container-intro mb-5'>
           <div className='col-sm-6'>
             <img src="images/hello.svg" alt="hello" className='img-fluid'/>
