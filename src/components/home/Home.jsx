@@ -75,7 +75,6 @@ const Home = () => {
               <div className='card-body'>
                 <h5 className='card-title'>Jobs Web App</h5>
                 <p className='card-text'>This is a web application developed using react as a frontend and flask as backend, which pulls the details about the latest jobs from the SQL database for the company given by the user as a input and display them.</p>
-                <a href="#" className='btn btn-primary'>Read More</a>
               </div>
             </div>
           </div>
@@ -87,7 +86,6 @@ const Home = () => {
               <div className='card-body'>
                 <h5 className='card-title'>Django Study App</h5>
                 <p className='card-text'>This application comes with full CRUD functionality and login-registration features. People with similar interest can connect with each other and have discussion on the different topics.</p>
-                <a href="#" className='btn btn-primary'>Read More</a>
               </div>
             </div>
           </div>
