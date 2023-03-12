@@ -16,6 +16,7 @@
 .projects__container-image img{
   width: 60%;
   height: 80%;
+  z-index: -1;
 }
 
 .project__container-intro_btn{

@@ -75,6 +75,7 @@
 .about__container-social__image img{
   height: 100%;
   width: 100%;
+  
 }
 
 .about__container-content{
@@ -182,6 +183,7 @@
   .about__container-social__image img {
       width: 100%;
       height: 100%;
+      
   }
   .about__container-graduation{
     flex-direction: column;

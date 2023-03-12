@@ -32,7 +32,7 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-      <div className='container projects__container' data-aos='fade-up'>
+      <div className='container projects__container'>
         <div className='projects__container-image'>
           <img src="/images/project.svg" alt="" />
         </div>
