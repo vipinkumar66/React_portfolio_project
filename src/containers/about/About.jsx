@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './about.css'
-import Aos from 'aos'
+import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { FaGithub, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
 
@@ -8,7 +8,10 @@ import { FaGithub, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
 const About = () => {
 
   useEffect(()=>{
-    Aos.init({duration:1000})
+    AOS.init({duration:1500});
+    return () => {
+      AOS.refresh();
+    };
   },[])
 
   return (
@@ -24,7 +27,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='container about__container-graduation mt-5 mb-5' data-aos="fade-right">
+      <div className='container about__container-graduation mb-5' data-aos="fade-down">
         <h1>Education</h1>
         <div className='about__container-graduation__small'>
           <h3>Higher Secondary Education</h3>

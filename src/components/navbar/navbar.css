@@ -1,141 +1,97 @@
-/* .navbar {
-    position: fixed;
-    background-color: var(--bg-primary);
-    transition: width 600ms ease;
-    overflow: scroll;
-  }
+.navbar__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.navbar__container-links{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar__container-links_logo {
+  margin-right: 2rem;
+}
+
+.navbar__container-links_logo img {
+  width: 65.56px;
+  height: 36.02px;
+}
+
+.navbar__container-links_content{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__container-links_content p{
+  color: #000;
+  font-family: 'Sriracha', cursive;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.navbar__menu{
+  margin-left: 1rem;
+
+  display: none;
+  position: relative;
+}
+
+.navbar__menu svg{
+  cursor: pointer;
+}
+
+.navbar__menu_container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
   
-  .navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .nav-item {
-    width: 100%;
-  }
-  
-  .nav-item:last-child {
-    margin-top: auto;
-  }
-  
-  .nav-link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: var(--text-primary);
-    text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
-    transition: var(--transition-speed);
-  }
-  
-  .nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-  }
-  
-  .link-text {
+  text-align: end;
+  background: rgb(227,227,227);
+  background: radial-gradient(circle, rgba(227,227,227,1) 0%, rgba(233,237,241,1) 100%);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.navbar__menu_container p{
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar__container-links_content {
     display: none;
-    margin-left: 1rem;
   }
-  
-  .nav-link .bi {
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
+
+  .navbar__menu {
+      display: flex;
   }
-  
-  .bi {
-    color: #ff7eee;
+}
+
+@media screen and (max-width: 550px) {
+  .navbar__container {
+    padding: 2rem;
+    color: #000;
+    font-family: 'Sriracha', cursive;
+    text-transform: capitalize;
   }
-  
-  
-  .bi{
-    transition: var(--transition-speed);
+
+  .navbar__menu_container {
+      top: 20px;
   }
-  
-  .logo {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
-    font-size: 1.5rem;
-    letter-spacing: 0.3ch;
-    width: 100%;
-  }
-  
-  .logo .bi {
-    transform: rotate(0deg);
-    transition: var(--transition-speed);
-  }
-  
-  .logo-text
-  {
-    display: inline;
-    position: absolute;
-    left: -999px;
-    transition: var(--transition-speed);
-  }
-  
-  .navbar:hover .logo .bi {
-    transform: rotate(-180deg);
-  }
-  
-  /* Small screens */
-  /* @media only screen and (max-width: 600px) {
-    .navbar {
-      bottom: 0;
-      width: 100vw;
-      height: 5rem;
-    }
-  
-    .logo {
-      display: none;
-    }
-  
-    .navbar-nav {
-      flex-direction: row;
-    }
-  
-    .nav-link {
-      justify-content: center;
-    }
-  
-    main {
-      margin: 0;
-    }
-  } */
-  
-  /* Large screens */
-  /* @media only screen and (min-width: 600px) {
-    .navbar {
-      top: 0;
-      width: 5rem;
-      height: 100vh;
-    }
-  
-    .navbar:hover {
-      width: 16rem;
-    }
-  
-    .navbar:hover .link-text {
-      display: inline;
-    }
-  
-    .navbar:hover .logo .bi
-    {
-      margin-left: 11rem;
-    }
-  
-    .navbar:hover .link-text
-    {
-      left: 0px;
-    }
-  } */ 
+
+}

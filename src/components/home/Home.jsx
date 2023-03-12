@@ -1,24 +1,27 @@
 import React, { useEffect } from 'react'
 import './home.css'
-import Aos from 'aos'
+import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 
 const Home = () => {
 
   useEffect(()=>{
-    Aos.init({duration:1000})
+    AOS.init({duration:1500});
+    return () => {
+      AOS.refresh();
+    };
   },[])
 
   return (
     <div className='home'>
-      <div className='row main home__container'>
+      <div className='container main home__container'>
         <div className='intro__text'>
           <h1>Hey, I am a <strong>web developer </strong>!</h1>
           <p>who is still in development mode...</p>
         </div>
         <div className=' main author__image'>
-          <img className='author__img' src='images/1674727737645.jpg'></img>
+          <img src='images/1674727737645.jpg'></img>
         </div>
       </div>
       <div className='container intro__container border-top' data-aos="fade-left">
@@ -58,7 +61,7 @@ const Home = () => {
         <div className='row border-bottom'>
           <h3>If found this portfolio interseting, why not to have a conversation? Contact me here.. </h3>
           <div className='col'>
-            <button type='button btn-sm'>Connect</button>
+            <button type='button btn-sm'><a href="https://www.linkedin.com/in/vipin-kumar-382923248/" target="_blank">Connect</a></button>
           </div>
         </div>
         <div className='row projects__intro'data-aos="fade-down">
